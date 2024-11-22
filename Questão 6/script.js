@@ -1,0 +1,11 @@
+const primeiroParagrafo = document.createElement("p");
+primeiroParagrafo.id = "primeiro";
+primeiroParagrafo.textContent = "Este é o primeiro parágrafo.";
+const segundoParagrafo = document.createElement("p");
+segundoParagrafo.id = "segundo";
+segundoParagrafo.textContent = "Este é o segundo parágrafo.";
+document.body.appendChild(primeiroParagrafo);
+document.body.appendChild(segundoParagrafo);
+const heading = document.createElement("h2");
+heading.textContent = "Título entre parágrafos";
+document.body.insertBefore(heading, segundoParagrafo);
